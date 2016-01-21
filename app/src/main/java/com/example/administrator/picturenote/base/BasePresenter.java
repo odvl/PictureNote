@@ -1,10 +1,26 @@
 package com.example.administrator.picturenote.base;
 
+import android.content.Context;
+
+import com.example.administrator.picturenote.view.IBaseView;
+
+import rx.Subscription;
+
 /**
  * Created by Administrator on 2016/1/20.
  */
-public interface BasePresenter<T> {
+public abstract class BasePresenter<T extends IBaseView> {
 
-    void bind(T view);
-    void unBind();
+    protected Context context;
+    protected Subscription subscription;
+    protected T iView;
+
+    public BasePresenter(Context context, T iView) {
+        this.context = context;
+        this.iView = iView;
+    }
+
+    public abstract void bind(T view);
+
+    public abstract void unBind();
 }
