@@ -39,6 +39,7 @@ public class MainPresenter extends BasePresenter<IMainView> {
 
     @Override
     public void unBind() {
+        this.subscription.unsubscribe();
 
     }
 }
