@@ -1,4 +1,4 @@
-package com.example.administrator.picturenote.view;
+package com.example.administrator.picturenote.view.activity;
 
 import com.example.administrator.picturenote.base.BaseActivity;
 

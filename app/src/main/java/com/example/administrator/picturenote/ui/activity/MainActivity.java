@@ -10,12 +10,12 @@ import android.view.LayoutInflater;
 import com.example.administrator.picturenote.R;
 import com.example.administrator.picturenote.base.BaseActivity;
 import com.example.administrator.picturenote.base.BaseFragment;
-import com.example.administrator.picturenote.presenter.MainPresenter;
+import com.example.administrator.picturenote.presenter.activity.MainPresenter;
 import com.example.administrator.picturenote.ui.fragment.MeFragment;
 import com.example.administrator.picturenote.ui.fragment.NoteFragment;
 import com.example.administrator.picturenote.ui.fragment.PictureFragment;
 import com.example.administrator.picturenote.ui.fragment.TravelFragment;
-import com.example.administrator.picturenote.view.IMainView;
+import com.example.administrator.picturenote.view.activity.IMainView;
 
 import java.util.ArrayList;
 import java.util.List;

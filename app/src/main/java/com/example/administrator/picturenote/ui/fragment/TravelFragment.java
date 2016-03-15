@@ -13,8 +13,8 @@ import android.widget.TextView;
 
 import com.example.administrator.picturenote.R;
 import com.example.administrator.picturenote.base.BaseFragment;
-import com.example.administrator.picturenote.presenter.TravelPresenter;
-import com.example.administrator.picturenote.view.ITravelView;
+import com.example.administrator.picturenote.presenter.activity.TravelPresenter;
+import com.example.administrator.picturenote.view.activity.ITravelView;
 
 import java.util.ArrayList;
 
@@ -44,7 +44,7 @@ public class TravelFragment extends BaseFragment implements ITravelView, View.On
     protected void loadDatas() {
         travelPresenter = new TravelPresenter(getActivity(), this);
         travelFragmentList.clear();
-        travelFragmentList.add(new TravelModel1Fragment());
+        travelFragmentList.add(new TravelMapViewFragment());
         travelFragmentList.add(new TravelModel2Fragment());
 
         viewPagerTravel.setAdapter(new TravelAdapter(getChildFragmentManager()));

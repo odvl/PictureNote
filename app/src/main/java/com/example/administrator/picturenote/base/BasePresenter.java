@@ -2,7 +2,7 @@ package com.example.administrator.picturenote.base;
 
 import android.content.Context;
 
-import com.example.administrator.picturenote.view.IBaseView;
+import com.example.administrator.picturenote.view.activity.IBaseView;
 
 import rx.Subscription;
 

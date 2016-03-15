@@ -1,9 +1,9 @@
-package com.example.administrator.picturenote.presenter;
+package com.example.administrator.picturenote.presenter.activity;
 
 import android.content.Context;
 
 import com.example.administrator.picturenote.base.BasePresenter;
-import com.example.administrator.picturenote.view.IMainView;
+import com.example.administrator.picturenote.view.activity.IMainView;
 
 /**
  * Created by Administrator on 2016/1/21.
