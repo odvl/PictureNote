@@ -76,7 +76,9 @@ public class MainActivity extends BaseActivity implements IMainView {
 
         viewPagerMain = (ViewPager) findViewById(R.id.viewPagerMain);
         tabLayoutMain = (TabLayout) findViewById(R.id.tabLayoutMain);
+
         LayoutInflater inflater = LayoutInflater.from(this);
+
         tabLayoutMain.addTab(tabLayoutMain.newTab().setCustomView(inflater.inflate(R.layout.item_bottom_travle, null)));
         tabLayoutMain.addTab(tabLayoutMain.newTab().setCustomView(inflater.inflate(R.layout.item_bottom_picture, null)));
         tabLayoutMain.addTab(tabLayoutMain.newTab().setCustomView(inflater.inflate(R.layout.item_bottom_note, null)));
